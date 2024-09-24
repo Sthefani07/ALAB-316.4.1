@@ -1,3 +1,3 @@
-let body = document.getElementById("body");
-
+let form = localStorage.getItem("registration");
+console.log(localStorage.getItem("registration"));
 

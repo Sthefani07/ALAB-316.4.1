@@ -33,7 +33,13 @@
           <span class="input-icon"><i class="fa-solid fa-envelope"></i></span
           ><br />
 
-          <input name="password" type="text" required placeholder="Password" />
+          <input name="password" 
+          type="text" 
+          required 
+          placeholder="Password" 
+          minlength="12"
+          pattern="/^[a-zA-Z0-9]+$/"
+          title="Passwords must have at least one uppercase one lowercase letter and one special character."/>
           <span class="input-icon"><i class="fa-solid fa-key"></i></span><br />
 
           <input
@@ -60,7 +66,8 @@
         <p>Login using your account information.</p>
 
         <!-- Login Form -->
-        <form id="login" style="border-bottom: 1px solid lightgray;" required >
+        <form id="login" 
+        style="border-bottom: 1px solid lightgray;" required >
           <input name="username" 
           type="text" 
           placeholder="Username" 
@@ -68,7 +75,13 @@
           pattern="^[a-zA-Z]*$"/>
           <span class="input-icon"><i class="fa-solid fa-user"></i></span><br />
 
-          <input name="password" type="text" placeholder="Password" required/>
+          <input name="password" 
+          type="text" 
+          placeholder="Password" 
+          minlength="12"
+          pattern="/^[a-zA-Z0-9!@#$%^&*]+$/"
+          title="Passwords must have at least one uppercase one lowercase letter and one special character."
+          required/>
           <span class="input-icon"><i class="fa-solid fa-key"></i></span
           ><br /><br />
 
